@@ -75,6 +75,35 @@ The existing Samsung 256 GB M.2 2242 SATA SSD remains operational and provides s
 - [ ] Perform final reliability testing.
 - [ ] Record final specifications and project cost.
 
+## Before Pictures
+
+Before beginning hardware work, add the original-condition photographs to `photos/01-initial-assessment/` using the filenames below.
+
+| Photograph | Filename | Added |
+|---|---|:---:|
+| Laptop closed, top view | `01-laptop-closed.jpg` | ⬜ |
+| Laptop open | `02-laptop-open.jpg` | ⬜ |
+| Front edge | `03-front.jpg` | ⬜ |
+| Left-side ports | `04-left-side.jpg` | ⬜ |
+| Right-side ports | `05-right-side.jpg` | ⬜ |
+| Rear edge | `06-rear.jpg` | ⬜ |
+| Bottom cover | `07-bottom.jpg` | ⬜ |
+| Deteriorating screen | `08-screen-condition.jpg` | ⬜ |
+| Built-in keyboard | `09-keyboard-condition.jpg` | ⬜ |
+| Trackpad | `10-trackpad-condition.jpg` | ⬜ |
+| Failed Ethernet port | `11-ethernet-port.jpg` | ⬜ |
+
+After the images are uploaded, add selected photographs to this gallery by removing the comment markers and keeping only images that clearly support the restoration story:
+
+```markdown
+<!-- ![Laptop before restoration](photos/01-initial-assessment/01-laptop-closed.jpg) -->
+<!-- ![Original laptop condition](photos/01-initial-assessment/02-laptop-open.jpg) -->
+<!-- ![Original bottom cover](photos/01-initial-assessment/07-bottom.jpg) -->
+<!-- ![Original screen condition](photos/01-initial-assessment/08-screen-condition.jpg) -->
+```
+
+Crop or obscure service tags, serial numbers, addresses, reflections, and other identifying details before publication.
+
 ## Project Boundaries
 
 Project Atlas remains the physical server restoration project. Homelab architecture, Docker services, security labs, and detailed application configurations are outside this repository.

@@ -1,42 +1,40 @@
 # Changelog
 
-All notable updates to Project Atlas will be documented in this file.
-
-The project uses milestone-based version numbers to track the physical restoration, hardware upgrades, and validation of the Dell Latitude E7250 infrastructure server.
-
----
+All notable Project Atlas updates are documented here.
 
 ## [Unreleased]
 
+### Added
+
+- Added a formal storage compatibility decision record.
+- Added a public-safe, sanitized baseline summary.
+- Added privacy guidance for photographs, screenshots, and terminal output.
+- Recorded the Timetec memory kit, iCAN cooling stand, and HP keyboard.
+
+### Changed
+
+- Retained the operational Samsung 256 GB M.2 2242 SATA SSD.
+- Deferred a capacity upgrade until measured usage justifies one.
+- Recorded the WD Blue SA510 1 TB M.2 2280 SSD as incompatible and planned for return.
+- Removed outdated SSD installation steps.
+- Clarified that Atlas covers the physical server platform.
+- Kept Athena as a possible future workload rather than core Atlas scope.
+- Changed the permanent wired-network solution to an evaluation rather than a predetermined purchase.
+
 ### Planned
 
-- Document the laptop’s original physical condition.
-- Record the original hardware specifications.
-- Upgrade the memory from 8 GB to 16 GB.
-- Replace the existing SSD.
-- Install and test the multi-fan cooling stand.
-- Add a wireless keyboard for local command-line access.
-- Test the USB Gigabit Ethernet adapter.
-- Add a dedicated external monitor for local maintenance.
-- Replace the battery at a later stage.
-- Replace the bottom cover at a later stage.
-- Complete final stability and temperature testing.
-
----
+- Install and validate the 16 GB memory kit.
+- Install and test the cooling stand and wireless keyboard.
+- Select and validate a wired-network solution.
+- Add an external maintenance monitor.
+- Replace the battery and bottom cover later.
+- Complete stability and temperature testing.
 
 ## [0.1.0] - 2026-07-19
 
 ### Added
 
-- Created the Project Atlas GitHub repository.
-- Added the initial project README.
-- Defined the project scope and success criteria.
-- Documented the Dell Latitude E7250 as the base system.
-- Identified the planned hardware upgrades and physical repairs.
-- Recorded the cooling stand as a purchased project component.
-- Established that the server will be managed primarily through SSH.
-- Planned a dedicated external monitor for local command-line maintenance.
-
-### Notes
-
-Project Atlas currently focuses on the physical restoration and hardware modernization of the server. Software services and the broader homelab architecture will be documented in the main homelab repository.
+- Created the repository, README, and project overview.
+- Documented the Dell Latitude E7250 baseline.
+- Defined the restoration scope and initial success criteria.
+- Established SSH as the primary administration method.

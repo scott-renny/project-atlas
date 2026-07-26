@@ -1,108 +1,60 @@
 # Original Hardware Specifications
 
-## System Information
+## System
 
 | Component | Specification |
-|-----------|---------------|
+|---|---|
 | Manufacturer | Dell |
 | Model | Latitude E7250 |
-| Primary Purpose | Ubuntu Infrastructure Server |
-| Operating System | Ubuntu Server 22.04 LTS |
-| Purchase Price | $110 CAD |
+| CPU | Intel Core i7-5600U (2 cores / 4 threads) |
+| Operating system | Ubuntu Server 22.04 LTS |
+| Purchase price | $110 CAD |
 
----
+## Memory
 
-# Processor
+| Item | Value |
+|---|---|
+| Installed | 8 GB DDR3L |
+| Purchased upgrade | Timetec 16 GB (2 × 8 GB) DDR3L-1600 |
 
-| Component | Value |
-|-----------|-------|
-| CPU | Intel Core i7-5600U |
-| Cores | 2 |
-| Threads | 4 |
+## Storage
 
----
+| Item | Value |
+|---|---|
+| Current drive | Samsung 256 GB M.2 2242 SATA SSD |
+| Status | Installed and operational |
+| Current-build decision | Retain and validate |
+| Capacity upgrade | Deferred until justified |
 
-# Memory
+Physical inspection confirmed the 2242 drive and mounting position. A WD Blue SA510 1 TB M.2 2280 SATA drive was too long and was not installed.
 
-| Component | Value |
-|-----------|-------|
-| Installed Memory | 8 GB DDR3L |
-| Planned Upgrade | 16 GB DDR3L |
-
----
-
-# Storage
-
-| Component | Value |
-|-----------|-------|
-| Current Drive | Existing M.2 SATA SSD |
-| Planned Upgrade | Larger capacity M.2 SATA SSD |
-
----
-
-# Network
+## Network
 
 | Component | Status |
-|-----------|--------|
+|---|---|
 | Wi-Fi | Operational |
 | Bluetooth | Operational |
-| Integrated Ethernet | Hardware failure |
-| Planned Network Connection | USB Gigabit Ethernet Adapter |
+| Integrated Ethernet | Non-functional |
+| Permanent wired solution | Under evaluation |
 
----
+## Display, Input, and Cooling
 
-# Display
+- Internal LCD is functional but deteriorating.
+- An external maintenance monitor is planned.
+- An HP 230 wireless keyboard has been purchased.
+- Factory cooling will be cleaned and supplemented by an iCAN K5 stand.
+- Thermal compound will be replaced if inspection indicates it is required.
 
-| Component | Status |
-|-----------|--------|
-| Internal LCD | Functional but nearing end of usable life |
-| Planned Configuration | Dedicated external monitor for local maintenance |
+## Physical Condition
 
----
+- Bottom-cover and battery replacements are planned.
+- USB error `-71` was previously observed on one port.
 
-# Cooling
+## Planned Work
 
-Current cooling configuration:
-
-- Factory cooling system
-- Internal fan
-- Existing thermal compound
-
-Planned improvements:
-
-- Multi-fan laptop cooling stand
-- Internal cleaning
-- Thermal inspection
-- Thermal compound replacement if required
-
----
-
-# Physical Condition
-
-Known issues:
-
-- Bottom cover requires replacement.
-- Battery replacement planned.
-- Internal display is deteriorating.
-- Integrated Ethernet port has failed.
-- Previous USB error (-71) observed on one USB port.
-
----
-
-# Planned Hardware Upgrades
-
-- Upgrade memory to 16 GB.
-- Upgrade SSD.
-- Install cooling stand.
-- Add wireless keyboard.
-- Add dedicated maintenance monitor.
-- Replace battery (future).
-- Replace bottom cover (future).
-
----
-
-# Baseline Status
-
-This document represents the hardware configuration before any upgrades or restoration work has been completed.
-
-Future documents will compare upgraded hardware against this baseline.
+- Install and validate the memory kit.
+- Validate SSD health, free space, and filesystem.
+- Test the cooling stand and wireless keyboard.
+- Select and validate wired networking.
+- Add an external monitor.
+- Replace the battery and bottom cover later.

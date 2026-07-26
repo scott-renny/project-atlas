@@ -2,146 +2,98 @@
 
 ## Dell Latitude E7250 Hardware Restoration and Server Upgrade
 
-Project Atlas documents the restoration and hardware modernization of a used Dell Latitude E7250 that is being repurposed as a dedicated Ubuntu infrastructure server.
+Project Atlas documents the physical restoration and hardware modernization of a used Dell Latitude E7250 being repurposed as a dependable Ubuntu infrastructure server.
 
-The project focuses on physical repairs, hardware upgrades, cooling, local console access, testing, and long-term reliability. Software services and the broader homelab architecture are documented separately in the main homelab repository.
+The repository focuses on the physical server platform: condition assessment, compatible hardware, cooling, local console access, testing, and long-term reliability. Hosted services and the broader homelab architecture are documented separately.
 
----
+## Objective
 
-## Project Objective
+Extend the useful life of an older business-class laptop and prepare it as a reliable, primarily headless command-line server. Routine administration will occur over SSH; a wireless keyboard and future external monitor will provide local maintenance access.
 
-The objective of Project Atlas is to extend the usable life of an older business-class laptop and convert it into a dependable command-line server for a cybersecurity homelab.
+## Current Hardware
 
-The system will normally be managed remotely through SSH. A wireless keyboard and dedicated external monitor will provide local command-line access when maintenance or troubleshooting is required.
-
----
-
-## Base System
-
-| Component | Original Specification |
+| Component | Configuration |
 |---|---|
-| Manufacturer | Dell |
-| Model | Latitude E7250 |
-| Processor | Intel Core i7-5600U |
-| Memory | 8 GB |
-| Operating System | Ubuntu Server 22.04 LTS |
-| Purchase Price | $110 CAD |
-| Primary Role | Ubuntu infrastructure server |
-
----
+| Model | Dell Latitude E7250 |
+| Processor | Intel Core i7-5600U (2 cores / 4 threads) |
+| Memory | 8 GB DDR3L; Timetec 16 GB kit purchased |
+| Storage | Samsung 256 GB M.2 2242 SATA SSD retained |
+| Operating system | Ubuntu Server 22.04 LTS |
+| Cooling | Factory cooling; iCAN K5 stand purchased |
+| Local input | HP 230 wireless keyboard purchased |
+| Primary role | Ubuntu infrastructure server |
 
 ## Known Issues
 
-The laptop was purchased as a used system and currently has several hardware and cosmetic concerns:
-
-- The internal laptop display is nearing the end of its usable life.
-- The integrated Ethernet port has a hardware failure.
-- One USB port has previously generated USB error `-71`.
-- The bottom cover requires replacement.
-- The battery will require replacement.
-- The current memory capacity is limited to 8 GB.
-- The current SSD will be replaced or upgraded.
-
-These issues will be documented, repaired, bypassed, or monitored throughout the project.
-
----
+- The internal display is deteriorating.
+- The integrated Ethernet port is non-functional.
+- One USB port previously generated error `-71`.
+- The battery and bottom cover require future replacement.
 
 ## Project Scope
 
-Project Atlas covers the following work:
+- Install and validate the 16 GB DDR3L memory kit.
+- Retain and validate the existing 256 GB SSD.
+- Clean and assess the internal cooling system.
+- Install and test the five-fan cooling stand.
+- Add an external maintenance monitor.
+- Select and validate a Linux-compatible wired-network solution.
+- Replace the battery and bottom cover in later phases.
+- Record photographs, benchmarks, temperatures, and stability results.
 
-### Hardware Upgrades
+## Storage Decision
 
-- Upgrade the system from 8 GB to 16 GB of DDR3L memory.
-- Install a larger M.2 SATA SSD.
-- Inspect and clean the internal cooling system.
-- Replace the processor thermal compound if required.
-- Verify memory, storage, temperatures, and system stability.
+A WD Blue SA510 1 TB M.2 SATA SSD was evaluated but found to use the 2280 form factor. Atlas uses a 2242 mounting position, so the replacement drive was not installed and is being returned.
 
-### Physical Restoration
-
-- Replace the bottom cover at a later stage.
-- Replace the battery at a later stage.
-- Inspect missing or damaged screws and rubber feet.
-- Document the physical condition before and after restoration.
-
-### Cooling and Placement
-
-- Install the laptop on a multi-fan cooling stand.
-- Measure temperatures before and after using the cooling stand.
-- Keep the server in a stable, ventilated desktop location.
-- Organize the power, network, monitor, and keyboard cables.
-
-### Local Command-Line Console
-
-- Add a wireless keyboard for local command-line administration.
-- Add a dedicated external monitor because the internal display is failing.
-- Configure the system so that normal administration is performed over SSH.
-- Retain the external display as a maintenance and recovery console.
-
-### Network Connectivity
-
-- Use a USB Gigabit Ethernet adapter to bypass the failed onboard Ethernet port.
-- Verify stable wired network connectivity.
-- Document the adapter and network configuration used by the server.
-
----
+The existing Samsung 256 GB M.2 2242 SATA SSD remains operational and provides sufficient capacity for the current role. A capacity upgrade is deferred until measured usage justifies a compatible replacement. See [hardware/storage-decision.md](hardware/storage-decision.md).
 
 ## Current Status
 
 ### Completed
 
-- [x] Dell Latitude E7250 acquired.
-- [x] Ubuntu Server installed.
-- [x] Initial server configuration completed.
-- [x] Multi-fan laptop cooling stand purchased.
+- [x] Laptop acquired.
+- [x] Ubuntu Server installed and initially configured.
+- [x] Baseline hardware identified.
+- [x] Storage form factor physically verified.
+- [x] Existing SSD retained.
+- [x] Memory kit, cooling stand, and wireless keyboard purchased.
 
 ### In Progress
 
-- [ ] Document original system condition.
-- [ ] Record current hardware information.
-- [ ] Upgrade the SSD.
-- [ ] Upgrade the memory to 16 GB.
-- [ ] Install and test the cooling stand.
-- [ ] Add the wireless keyboard.
-- [ ] Test USB Ethernet connectivity.
+- [ ] Capture and sanitize baseline system information.
+- [ ] Document the original physical condition.
+- [ ] Install and validate the 16 GB memory kit.
+- [ ] Install and test the cooling stand and keyboard.
+- [ ] Select and test a wired-network solution.
 - [ ] Establish baseline temperatures and performance.
 
 ### Planned
 
-- [ ] Add a dedicated external monitor.
-- [ ] Replace the battery.
-- [ ] Replace the bottom cover.
+- [ ] Add an external monitor.
+- [ ] Replace the battery and bottom cover.
 - [ ] Complete cosmetic restoration.
-- [ ] Perform final reliability and stability testing.
-- [ ] Record final specifications and total project cost.
+- [ ] Perform final reliability testing.
+- [ ] Record final specifications and project cost.
 
----
+## Project Boundaries
 
-## Planned Repository Structure
+Project Atlas remains the physical server restoration project. Homelab architecture, Docker services, security labs, and detailed application configurations are outside this repository.
 
-```text
-project-atlas/
-├── README.md
-├── CHANGELOG.md
-├── LICENSE
-├── docs/
-│   ├── project-overview.md
-│   ├── initial-assessment.md
-│   ├── upgrade-plan.md
-│   ├── hardware-installation.md
-│   ├── cooling-and-placement.md
-│   ├── local-console.md
-│   ├── testing-and-validation.md
-│   └── lessons-learned.md
-├── hardware/
-│   ├── original-specifications.md
-│   ├── parts-list.md
-│   ├── compatibility-notes.md
-│   └── final-specifications.md
-├── logs/
-│   ├── build-log.md
-│   ├── benchmark-results.md
-│   └── temperature-results.md
-├── screenshots/
-└── photos/
+Project Athena may be tested on Atlas as a possible future workload, but it is not part of Atlas's restoration scope and may later move to dedicated hardware.
+
+## Privacy
+
+Public evidence must not expose usernames, hostnames, IP or MAC addresses, Wi-Fi details, serial numbers, service tags, order details, SSH fingerprints, tokens, or credentials. Crop or redact product and installation images before publication.
+
+## Success Criteria
+
+- The system recognizes and passes testing with 16 GB of memory.
+- The retained SSD passes health checks and has adequate free space.
+- Temperatures remain acceptable during extended operation.
+- Wired networking remains stable.
+- The keyboard and external monitor provide a usable local console.
+- Future physical repairs and final validation are documented.
+
+## License
+
+This project is licensed under the MIT License.

@@ -1,0 +1,48 @@
+PROJECT ATLAS — SANITIZED BASELINE SUMMARY
+
+Purpose:
+Public-safe summary of the pre-upgrade Dell Latitude E7250 baseline.
+This is a curated summary, not a verbatim terminal transcript.
+
+SYSTEM
+Model: Dell Latitude E7250
+Operating system: Ubuntu Server 22.04 LTS
+Processor: Intel Core i7-5600U
+CPU topology: 2 cores / 4 threads
+
+MEMORY
+Installed baseline: 8 GB DDR3L
+Planned upgrade: Timetec 16 GB kit (2 x 8 GB) DDR3L-1600
+
+STORAGE
+Installed device: Samsung 256 GB M.2 2242 SATA SSD
+Status: Operational and retained
+Capacity upgrade: Deferred
+
+NETWORK
+Wi-Fi: Operational
+Integrated Ethernet: Non-functional
+Permanent wired solution: Under evaluation
+
+KNOWN HARDWARE CONDITIONS
+- Internal display is deteriorating.
+- Battery replacement is planned.
+- Bottom-cover replacement is planned.
+- USB error -71 was previously observed on one port.
+
+SANITIZATION
+The following fields were intentionally omitted:
+- Linux username and home-directory paths
+- Hostname
+- Local and public IP addresses
+- MAC addresses and interface identifiers
+- Wi-Fi network details
+- Dell service tag and hardware serial numbers
+- SSD serial number, WWN, and SMART identifiers
+- SSH host keys and fingerprints
+- Account names, tokens, credentials, and secrets
+- Order numbers, delivery details, and addresses
+- Terminal escape and control sequences
+
+For reproducible technical evidence, collect a fresh post-upgrade session and
+publish only a reviewed, sanitized copy.

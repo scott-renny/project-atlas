@@ -23,86 +23,13 @@ Extend the useful life of an older business-class laptop and prepare it as a rel
 | Local input | HP 230 wireless keyboard purchased |
 | Primary role | Ubuntu infrastructure server |
 
-## Known Issues
-
-- The internal display is deteriorating.
-- The integrated Ethernet port is non-functional.
-- One USB port previously generated error `-71`.
-- The battery and bottom cover require future replacement.
-
-## Project Scope
-
-- Install and validate the 16 GB DDR3L memory kit.
-- Retain and validate the existing 256 GB SSD.
-- Clean and assess the internal cooling system.
-- Install and test the five-fan cooling stand.
-- Add an external maintenance monitor.
-- Select and validate a Linux-compatible wired-network solution.
-- Replace the battery and bottom cover in later phases.
-- Record photographs, benchmarks, temperatures, and stability results.
-
 ## Storage Decision
 
-A WD Blue SA510 1 TB M.2 SATA SSD was evaluated but found to use the 2280 form factor. Atlas uses a 2242 mounting position, so the replacement drive was not installed and is being returned.
+A WD Blue SA510 1 TB M.2 SATA SSD was evaluated but found to use the 2280 form factor. Atlas uses a 2242 mounting position, so the replacement drive was not installed.
 
-The existing Samsung 256 GB M.2 2242 SATA SSD remains operational and provides sufficient capacity for the current role. A capacity upgrade is deferred until measured usage justifies a compatible replacement. See [hardware/storage-decision.md](hardware/storage-decision.md).
+The existing Samsung 256 GB M.2 2242 SATA SSD remains operational and provides sufficient capacity for the current server role. A larger compatible SSD upgrade will only be considered if measured storage usage justifies the cost.
 
-## Current Status
-
-### Completed
-
-- [x] Laptop acquired.
-- [x] Ubuntu Server installed and initially configured.
-- [x] Baseline hardware identified.
-- [x] Storage form factor physically verified.
-- [x] Existing SSD retained.
-- [x] Memory kit, cooling stand, and wireless keyboard purchased.
-
-### In Progress
-
-- [ ] Capture and sanitize baseline system information.
-- [ ] Document the original physical condition.
-- [ ] Install and validate the 16 GB memory kit.
-- [ ] Install and test the cooling stand and keyboard.
-- [ ] Select and test a wired-network solution.
-- [ ] Establish baseline temperatures and performance.
-
-### Planned
-
-- [ ] Add an external monitor.
-- [ ] Replace the battery and bottom cover.
-- [ ] Complete cosmetic restoration.
-- [ ] Perform final reliability testing.
-- [ ] Record final specifications and project cost.
-
-## Before Pictures
-
-Before beginning hardware work, add the original-condition photographs to `photos/01-initial-assessment/` using the filenames below.
-
-| Photograph | Filename | Added |
-|---|---|:---:|
-| Laptop closed, top view | `01-laptop-closed.jpg` | ⬜ |
-| Laptop open | `02-laptop-open.jpg` | ⬜ |
-| Front edge | `03-front.jpg` | ⬜ |
-| Left-side ports | `04-left-side.jpg` | ⬜ |
-| Right-side ports | `05-right-side.jpg` | ⬜ |
-| Rear edge | `06-rear.jpg` | ⬜ |
-| Bottom cover | `07-bottom.jpg` | ⬜ |
-| Deteriorating screen | `08-screen-condition.jpg` | ⬜ |
-| Built-in keyboard | `09-keyboard-condition.jpg` | ⬜ |
-| Trackpad | `10-trackpad-condition.jpg` | ⬜ |
-| Failed Ethernet port | `11-ethernet-port.jpg` | ⬜ |
-
-After the images are uploaded, add selected photographs to this gallery by removing the comment markers and keeping only images that clearly support the restoration story:
-
-```markdown
-<!-- ![Laptop before restoration](photos/01-initial-assessment/01-laptop-closed.jpg) -->
-<!-- ![Original laptop condition](photos/01-initial-assessment/02-laptop-open.jpg) -->
-<!-- ![Original bottom cover](photos/01-initial-assessment/07-bottom.jpg) -->
-<!-- ![Original screen condition](photos/01-initial-assessment/08-screen-condition.jpg) -->
-```
-
-Crop or obscure service tags, serial numbers, addresses, reflections, and other identifying details before publication.
+See: [hardware/storage-decision.md](hardware/storage-decision.md)
 
 ## Project Boundaries
 

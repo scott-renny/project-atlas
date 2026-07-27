@@ -16,12 +16,22 @@ Extend the useful life of an older business-class laptop and prepare it as a rel
 |---|---|
 | Model | Dell Latitude E7250 |
 | Processor | Intel Core i7-5600U (2 cores / 4 threads) |
-| Memory | 8 GB DDR3L; Timetec 16 GB kit purchased |
+| Memory | Timetec 16 GB (2 × 8 GB) DDR3L-1600 CL11 installed |
 | Storage | Samsung 256 GB M.2 2242 SATA SSD retained |
 | Operating system | Ubuntu Server 22.04 LTS |
-| Cooling | Factory cooling; iCAN K5 stand purchased |
+| Cooling | iCAN K5 five-fan cooling stand purchased |
 | Local input | HP 230 wireless keyboard purchased |
 | Primary role | Ubuntu infrastructure server |
+
+## Completed Hardware Work
+
+- [x] Laptop acquired.
+- [x] Ubuntu Server installed and initially configured.
+- [x] Baseline hardware identified.
+- [x] Storage form factor physically verified.
+- [x] Existing Samsung 256 GB SSD retained.
+- [x] Timetec 16 GB DDR3L memory installed.
+- [x] Internal hardware cleaned and inspected.
 
 ## Storage Decision
 
@@ -30,6 +40,25 @@ A WD Blue SA510 1 TB M.2 SATA SSD was evaluated but found to use the 2280 form f
 The existing Samsung 256 GB M.2 2242 SATA SSD remains operational and provides sufficient capacity for the current server role. A larger compatible SSD upgrade will only be considered if measured storage usage justifies the cost.
 
 See: [hardware/storage-decision.md](hardware/storage-decision.md)
+
+## Current Status
+
+### In Progress
+
+- [ ] Capture and sanitize post-upgrade system information.
+- [ ] Document completed hardware installation photographs.
+- [ ] Validate cooling stand operation.
+- [ ] Validate wireless keyboard operation.
+- [ ] Install and test USB Ethernet adapter when received.
+- [ ] Establish baseline temperatures and performance.
+
+### Planned
+
+- [ ] Install replacement bottom cover.
+- [ ] Add an external maintenance monitor.
+- [ ] Replace the battery.
+- [ ] Complete final reliability testing.
+- [ ] Record final specifications and project cost.
 
 ## Project Boundaries
 

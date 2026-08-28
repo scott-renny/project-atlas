@@ -44,7 +44,7 @@ The project owner has confirmed that all planned physical upgrades, cleaning, an
 - [x] Existing Samsung 256 GB SSD retained after compatibility review.
 - [x] Internal hardware cleaning, inspection, and physical maintenance completed.
 - [x] Cooling stand installed.
-- [x] Wireless keyboard installed for local maintenance.
+- [x] HP 230 wireless keyboard installed and validated at the local Ubuntu console.
 - [x] External maintenance display path added.
 - [x] Battery replaced.
 - [x] Bottom cover replaced.
@@ -63,7 +63,7 @@ The Definition of Done is maintained in [docs/atlas-v1-completion.md](docs/atlas
 2. Document Wi-Fi as the intentional Atlas v1 network path and the lack of wired networking as an accepted limitation.
 3. Record SSD health, free space, and filesystem evidence.
 4. Establish idle and sustained-load temperature baselines.
-5. Record cooling stand, keyboard, and local display validation.
+5. Record cooling stand and local display validation.
 6. Verify lid-close, suspend/hibernate, reboot, and power-recovery behavior for server duty.
 7. Complete an extended reliability test and document the outcome.
 8. Record final component details, cost, photographs, and known limitations.

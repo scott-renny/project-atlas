@@ -42,14 +42,14 @@ The supplied current-system audit records Ubuntu Server 24.04.4 LTS and kernel 6
 
 ## Display, Input, Cooling, and Repairs
 
-The owner confirms that all planned physical upgrades are complete:
+The owner confirms that all planned physical upgrades, cleaning, and physical maintenance are complete:
 
 - cooling stand installed;
 - wireless keyboard installed;
 - external maintenance display path added;
 - replacement battery installed;
 - replacement bottom cover installed;
-- internal hardware cleaned and inspected.
+- internal hardware cleaning, inspection, and physical maintenance completed.
 
 Component details and operational validation evidence remain to be recorded where absent.
 

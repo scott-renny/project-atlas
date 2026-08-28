@@ -19,7 +19,7 @@ The owner confirms that every planned physical upgrade is complete.
 |---|---|---|---|---|
 | Memory | Timetec 16 GB (2 × 8 GB) DDR3L-1600 CL11 | Increase memory | Installed | Recognized by audit |
 | Cooling stand | iCAN K5 Blue, five fans | Improve airflow | Installed | Temperature test pending |
-| Keyboard | HP 230, 3L1E7AA#ABA | Local maintenance | Installed | Operation evidence pending |
+| Keyboard | HP 230, 3L1E7AA#ABA | Local maintenance | Installed | Operationally validated at Ubuntu console |
 | External monitor/display | Model not yet recorded | Local maintenance console | Installed | Operation evidence pending |
 | Replacement battery | Model not yet recorded | Restore battery function | Installed | Condition evidence pending |
 | Replacement bottom cover | Model not yet recorded | Restore protection and appearance | Installed | Owner-confirmed complete |
@@ -49,7 +49,7 @@ Physical work is complete. The following documentation and validation remain:
 1. Record missing models, installation dates, and costs.
 2. Add sanitized photographs of the completed build.
 3. Validate SSD health and capacity.
-4. Validate cooling, keyboard, display, battery, and continued Wi-Fi operation.
+4. Validate cooling, display, battery, and continued Wi-Fi operation.
 5. Record temperature, power-management, and extended-reliability results.
 
 The existing WD product screenshot may remain as historical evidence, but it must be identified as an incompatible evaluated component.

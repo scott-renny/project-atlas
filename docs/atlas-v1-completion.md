@@ -20,16 +20,16 @@ Physical installation and operational validation are tracked separately.
 
 - [x] Atlas v1 and Atlas v2 are clearly separated.
 - [x] The current operating system is recorded as Ubuntu Server 24.04.4 LTS.
-- [x] Physical restoration is recorded as complete.
+- [x] Physical restoration, cleaning, and maintenance are recorded as complete.
 - [x] The current phase is platform validation and closeout.
 - [ ] Final component details, specifications, cost, and known limitations are recorded.
 
 ### 2. Completed Physical Build
 
-The owner confirms completion of all planned physical upgrades:
+The owner confirms completion of all planned physical upgrades, cleaning, and physical maintenance:
 
 - [x] 16 GB Timetec DDR3L memory installed.
-- [x] Internal hardware cleaned and inspected.
+- [x] Internal hardware cleaning, inspection, and physical maintenance completed.
 - [x] Samsung 256 GB M.2 2242 SATA SSD retained.
 - [x] Cooling stand installed.
 - [x] Wireless keyboard installed.
@@ -87,7 +87,7 @@ The owner confirms completion of all planned physical upgrades:
 
 ### 8. Closeout
 
-- [x] Physical repairs and upgrades complete.
+- [x] Physical repairs, upgrades, cleaning, and maintenance complete.
 - [ ] Record final project cost.
 - [ ] Add missing model and specification details for completed components.
 - [ ] Add a short rebuild-oriented hardware and host summary.

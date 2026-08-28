@@ -38,7 +38,7 @@ The supplied current-system audit records Ubuntu Server 24.04.4 LTS and kernel 6
 | Wi-Fi | Operational and primary at the supplied audit |
 | Bluetooth | Operational at the original baseline |
 | Integrated Ethernet | Recorded as non-functional |
-| External wired solution | Installed; sustained wired-operation validation pending |
+| External wired solution | Not installed; intentionally not part of Atlas v1 |
 
 ## Display, Input, Cooling, and Repairs
 
@@ -58,7 +58,7 @@ Component details and operational validation evidence remain to be recorded wher
 - Capture and sanitize a current post-upgrade summary.
 - Validate SSD health, free space, and filesystem.
 - Validate cooling, keyboard, and local display operation.
-- Validate sustained wired networking.
+- Document Wi-Fi as the accepted Atlas v1 network path and wired networking as out of scope.
 - Validate server-duty power behavior.
 - Complete temperature and extended-reliability testing.
 - Record final component details, cost, photographs, and known limitations.

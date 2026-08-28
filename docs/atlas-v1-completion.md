@@ -32,7 +32,7 @@ The owner confirms completion of all planned physical upgrades, cleaning, and ph
 - [x] Internal hardware cleaning, inspection, and physical maintenance completed.
 - [x] Samsung 256 GB M.2 2242 SATA SSD retained.
 - [x] Cooling stand installed.
-- [x] Wireless keyboard installed.
+- [x] HP 230 wireless keyboard installed.
 - [x] External maintenance display path added.
 - [x] Battery replaced.
 - [x] Bottom cover replaced.
@@ -78,7 +78,7 @@ The owner confirms completion of all planned physical upgrades, cleaning, and ph
 
 - [x] Wireless keyboard installed.
 - [x] External maintenance display path added.
-- [ ] Record successful keyboard operation.
+- [x] Record successful HP 230 keyboard operation at the local Ubuntu console (2026-08-28).
 - [ ] Record successful local display operation.
 - [ ] Add sanitized photographs of the completed installation where useful.
 - [ ] Record the known USB-port limitation and its current operational impact.
@@ -127,7 +127,7 @@ Do not publish usernames, hostnames, addresses, MAC addresses, Wi-Fi details, se
 
 1. Capture the current sanitized baseline.
 2. Record the installed physical component details.
-3. Validate local keyboard and display access.
+3. Validate local display access; keyboard validation is complete.
 4. Document the accepted Wi-Fi-only Atlas v1 network design and validate continued connectivity.
 5. Validate storage health and free space.
 6. Measure temperatures and sustained-load behavior.

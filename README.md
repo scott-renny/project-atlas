@@ -26,7 +26,7 @@ The supplied system audit confirms:
 | Kernel | Linux 6.8.0-137-generic |
 | Host role | COC infrastructure server |
 | Uptime at audit | 20 days |
-| Primary network at audit | Wi-Fi; wired operation still requires documented validation |
+| Atlas v1 network | Wi-Fi; no external wired adapter will be added in this version |
 | Remote administration | SSH active |
 | Container runtime | Docker active |
 | Remote access | WireGuard active |
@@ -46,7 +46,6 @@ The project owner has confirmed that all planned physical upgrades, cleaning, an
 - [x] Cooling stand installed.
 - [x] Wireless keyboard installed for local maintenance.
 - [x] External maintenance display path added.
-- [x] External wired-network adapter installed.
 - [x] Battery replaced.
 - [x] Bottom cover replaced.
 
@@ -61,7 +60,7 @@ The Definition of Done is maintained in [docs/atlas-v1-completion.md](docs/atlas
 ## Highest-Priority Incomplete Work
 
 1. Capture a fresh sanitized post-upgrade hardware and operating-system record.
-2. Validate the installed wired-network path without removing the known-good remote path.
+2. Document Wi-Fi as the intentional Atlas v1 network path and the lack of wired networking as an accepted limitation.
 3. Record SSD health, free space, and filesystem evidence.
 4. Establish idle and sustained-load temperature baselines.
 5. Record cooling stand, keyboard, and local display validation.
@@ -84,7 +83,7 @@ See [hardware/storage-decision.md](hardware/storage-decision.md).
 - Dell Latitude E7250 platform
 - Ubuntu Server host readiness
 - completed physical restoration
-- wired-network validation
+- Wi-Fi network validation
 - cooling and reliability validation
 - local maintenance access
 - sanitized rebuild and closeout evidence

@@ -6,6 +6,9 @@ All notable Project Atlas updates are documented here.
 
 ### Added
 
+- Added the Atlas v1 platform validation and closeout Definition of Done.
+- Added evidence requirements and a safe execution order for remaining validation.
+- Added a clear boundary between Atlas v1 and the later Atlas v2 2U rack replacement.
 - Added a formal storage compatibility decision record.
 - Added a public-safe, sanitized baseline summary.
 - Added privacy guidance for photographs, screenshots, and terminal output.
@@ -14,23 +17,22 @@ All notable Project Atlas updates are documented here.
 
 ### Changed
 
+- Reconciled the documented operating system with the supplied Ubuntu Server 24.04.4 LTS audit.
+- Updated the project phase from assessment to platform validation and closeout.
+- Distinguished confirmed audit evidence from validation work that still requires execution.
 - Retained the operational Samsung 256 GB M.2 2242 SATA SSD.
 - Deferred a capacity upgrade until measured usage justifies one.
 - Recorded the WD Blue SA510 1 TB M.2 2280 SSD as incompatible and planned for return.
-- Removed outdated SSD installation steps.
-- Clarified that Atlas covers the physical server platform.
-- Kept Athena as a possible future workload rather than core Atlas scope.
+- Clarified that the repository covers Atlas v1 host-platform readiness without absorbing detailed service configuration.
 - Changed memory upgrade status from planned to completed.
 - Documented internal cleaning and hardware inspection completion.
-- Updated replacement parts status for the bottom cover and wired networking adapter.
 
-### Planned
+### Remaining
 
-- Validate cooling stand and wireless keyboard.
-- Install and validate USB Ethernet adapter when received.
-- Add an external maintenance monitor.
-- Replace the battery later.
-- Complete stability and temperature testing.
+- Capture current sanitized post-upgrade evidence.
+- Validate wired networking with a rollback path.
+- Validate storage health, cooling, local maintenance access, server-duty power behavior, and extended reliability.
+- Reconcile final specifications, costs, repairs, and explicitly deferred work.
 
 ## [0.1.0] - 2026-07-19
 

@@ -16,6 +16,8 @@ All notable Project Atlas updates are documented here.
 
 ### Changed
 
+- Validated HP 230 wireless keyboard operation at the local Ubuntu console.
+
 - Reconciled the current operating system with the supplied Ubuntu Server 24.04.4 LTS audit.
 - Preserved Ubuntu Server 22.04 LTS as the original historical baseline.
 - Updated the project phase from assessment and physical upgrading to platform validation and closeout.

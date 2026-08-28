@@ -17,7 +17,7 @@ Atlas v1 is the current laptop platform. Atlas v2 is the later 2U rack replaceme
 
 ## Scope
 
-This repository includes hardware assessment, completed physical upgrades, memory and storage decisions, cooling improvements, local console hardware, wired-network hardware, host-platform validation, temperatures, stability testing, and sanitized evidence.
+This repository includes hardware assessment, completed physical upgrades, memory and storage decisions, cooling improvements, local console hardware, Wi-Fi network operation, host-platform validation, temperatures, stability testing, and sanitized evidence.
 
 The repository may inventory services only when that evidence helps establish the host's current role. Detailed application configuration and the broader COC architecture are documented elsewhere.
 
@@ -27,11 +27,11 @@ This phase does not introduce Atlas v2 hardware requirements, new COC applicatio
 
 The supplied system audit identifies a Dell Latitude E7250 running Ubuntu Server 24.04.4 LTS with a 6.8.0-137-generic kernel, 16 GB of memory, and the retained Samsung system SSD. The host had 20 days of uptime at collection and was already operating as an infrastructure server.
 
-The audit showed that the primary LAN connection at collection was Wi-Fi. The owner has since confirmed that all physical upgrades, including the external wired-network hardware, are installed. Wired operation still requires documented validation before it can be recorded as the stable production path.
+The audit showed that the primary LAN connection was Wi-Fi. No external wired-network adapter is installed, and one will not be added in Atlas v1. Wi-Fi is the intentional network path for this version; the lack of wired networking is an accepted Atlas v1 limitation.
 
 ## Physical Restoration Status
 
-The owner confirms that the memory, cooling stand, local keyboard, external display path, external wired-network adapter, replacement battery, and replacement bottom cover are installed. All cleaning and physical maintenance are also complete. Physical restoration and maintenance are therefore complete.
+The owner confirms that the memory, cooling stand, local keyboard, external display path, replacement battery, and replacement bottom cover are installed. All cleaning and physical maintenance are also complete. Physical restoration and maintenance are therefore complete.
 
 This confirmation records installation, not unobserved technical test results. Component models, dates, costs, photographs, and validation evidence should be added where they are not yet recorded.
 

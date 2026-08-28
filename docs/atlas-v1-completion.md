@@ -2,87 +2,115 @@
 
 ## Phase Goal
 
-Close the gap between an operational Atlas host and a documented, reproducible, reliable Atlas v1 platform without expanding into Atlas v2 or adding new COC services.
+Validate and document the completed Atlas v1 physical build as a reliable Ubuntu infrastructure platform without expanding into Atlas v2 or adding new COC services.
+
+## Evidence Rules
+
+A checklist item may be marked complete when supported by:
+
+- the supplied system audit;
+- the owner's confirmation of completed physical installation; or
+- dated, sanitized validation evidence.
+
+Physical installation and operational validation are tracked separately.
 
 ## Definition of Done
-
-This repository phase is complete when every item below is either:
-
-- marked complete with the date and a link to sanitized evidence; or
-- explicitly deferred with the reason, impact, owner, and revisit condition.
 
 ### 1. Repository Accuracy
 
 - [x] Atlas v1 and Atlas v2 are clearly separated.
-- [x] The repository identifies the current operating system as Ubuntu Server 24.04.4 LTS.
-- [x] The current project phase is platform validation and closeout.
-- [ ] Hardware and status facts are consistent across all remaining documents.
-- [ ] Final specifications and known limitations are recorded.
+- [x] The current operating system is recorded as Ubuntu Server 24.04.4 LTS.
+- [x] Physical restoration is recorded as complete.
+- [x] The current phase is platform validation and closeout.
+- [ ] Final component details, specifications, cost, and known limitations are recorded.
 
-### 2. Host Evidence
+### 2. Completed Physical Build
+
+The owner confirms completion of all planned physical upgrades:
+
+- [x] 16 GB Timetec DDR3L memory installed.
+- [x] Internal hardware cleaned and inspected.
+- [x] Samsung 256 GB M.2 2242 SATA SSD retained.
+- [x] Cooling stand installed.
+- [x] Wireless keyboard installed.
+- [x] External maintenance display path added.
+- [x] External wired-network adapter installed.
+- [x] Battery replaced.
+- [x] Bottom cover replaced.
+
+### 3. Host Evidence
 
 - [ ] Add a fresh sanitized post-upgrade system summary.
-- [ ] Record CPU and installed-memory recognition.
+- [x] Record CPU and installed-memory recognition from the supplied audit.
 - [ ] Record disk layout, filesystem usage, and mount points.
 - [ ] Record SSD health evidence without serial numbers or other identifiers.
-- [ ] Record relevant firmware version and any accepted firmware risk.
+- [x] Record the firmware version from the supplied audit.
+- [ ] Record whether the firmware age is an accepted limitation.
 
-### 3. Networking and Remote Administration
+### 4. Networking and Remote Administration
 
-- [ ] Validate the intended wired network adapter and sustained link stability.
+- [x] Record that SSH was active during the audit.
+- [x] Record that WireGuard was active during the audit.
+- [x] Record installation of the external wired-network adapter.
+- [ ] Validate sustained wired-link stability.
 - [ ] Confirm the production address-assignment method.
 - [ ] Confirm SSH key-based administration from another LAN machine.
-- [ ] Confirm the remote-access path without publishing addresses, peer keys, or fingerprints.
+- [ ] Confirm the remote-access path without publishing addresses, keys, or fingerprints.
 - [ ] Document a rollback method before changing the primary network path.
 
-### 4. Server-Duty Power Behavior
+### 5. Server-Duty Power Behavior
 
+- [x] Replacement battery installed.
 - [ ] Confirm lid close does not suspend the host.
 - [ ] Confirm suspend and hibernate behavior is intentionally configured.
 - [ ] Confirm a clean reboot returns the host to an administrable state.
 - [ ] Record behavior after AC loss and restoration where safely testable.
-- [ ] Record battery and charger condition or explicitly accept their limitations.
+- [ ] Record battery and charger condition.
 
-### 5. Cooling and Reliability
+### 6. Cooling and Reliability
 
+- [x] Cooling stand installed.
 - [ ] Record idle temperatures after a stable settling period.
 - [ ] Record temperatures during a repeatable sustained-load test.
-- [ ] Validate cooling-stand operation.
-- [ ] Confirm the host remains responsive and free of thermal shutdowns or throttling during the test.
+- [ ] Record cooling-stand operation under test.
+- [ ] Confirm the host remains responsive without thermal shutdowns or throttling.
 - [ ] Complete and record an extended reliability run.
 
-### 6. Local Maintenance Access
+### 7. Local Maintenance Access
 
-- [ ] Validate the HP wireless keyboard.
-- [ ] Validate a usable local display path.
-- [ ] Photograph the completed installation where useful and sanitize images before publication.
-- [ ] Record the known USB-port limitation and its operational impact.
+- [x] Wireless keyboard installed.
+- [x] External maintenance display path added.
+- [ ] Record successful keyboard operation.
+- [ ] Record successful local display operation.
+- [ ] Add sanitized photographs of the completed installation where useful.
+- [ ] Record the known USB-port limitation and its current operational impact.
 
-### 7. Closeout
+### 8. Closeout
 
+- [x] Physical repairs and upgrades complete.
 - [ ] Record final project cost.
-- [ ] Mark physical repairs complete or explicitly deferred.
+- [ ] Add missing model and specification details for completed components.
 - [ ] Add a short rebuild-oriented hardware and host summary.
 - [ ] Review all public evidence for sensitive data.
 - [ ] Update the changelog and tag the Atlas v1 platform baseline.
 
-## Confirmed Evidence Available
+## Audit-Supported Current State
 
-The latest supplied audit supports these statements:
+The supplied audit confirms:
 
-- the host is a Dell Latitude E7250;
-- Ubuntu Server 24.04.4 LTS and kernel 6.8.0-137-generic are installed;
-- 16 GB of memory is installed;
-- the host had 20 days of uptime at collection;
-- the system SSD is the retained Samsung 256 GB device;
-- SSH, Docker, WireGuard, Caddy, Prometheus, Node Exporter, Grafana, and Wazuh components were active;
-- the primary LAN path at collection was Wi-Fi.
+- Dell Latitude E7250;
+- Ubuntu Server 24.04.4 LTS;
+- kernel 6.8.0-137-generic;
+- Intel Core i7-5600U with four logical CPUs;
+- approximately 16 GB of installed memory;
+- retained Samsung system SSD;
+- 20 days of uptime at collection;
+- SSH, Docker, WireGuard, Caddy, Prometheus, Node Exporter, Grafana, and Wazuh components active;
+- Wi-Fi was the primary LAN path at collection.
 
-These observations do not replace the incomplete tests above.
+The audit does not establish post-installation wired stability, temperature results, power-management behavior, SSD health, or local-console test results.
 
 ## Evidence Record Template
-
-Use one section per completed validation:
 
 ```markdown
 ### <validation name>
@@ -100,14 +128,15 @@ Do not publish usernames, hostnames, addresses, MAC addresses, Wi-Fi details, se
 ## Safe Execution Order
 
 1. Capture the current sanitized baseline.
-2. Validate local keyboard and display access.
-3. Document network rollback.
-4. Test wired networking without removing the known-good remote path.
-5. Validate storage health and free space.
-6. Measure temperatures and sustained-load behavior.
-7. Validate power-management and reboot behavior.
-8. Run extended reliability testing.
-9. Reconcile documents, deferred work, cost, and final evidence.
-10. Tag the completed Atlas v1 platform baseline.
+2. Record the installed physical component details.
+3. Validate local keyboard and display access.
+4. Document network rollback.
+5. Test wired networking without removing the known-good remote path.
+6. Validate storage health and free space.
+7. Measure temperatures and sustained-load behavior.
+8. Validate power-management and reboot behavior.
+9. Run extended reliability testing.
+10. Reconcile cost, final evidence, and known limitations.
+11. Tag the completed Atlas v1 platform baseline.
 
 Network and power-management changes can interrupt access. Perform them only when local recovery access is available.

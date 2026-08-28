@@ -20,17 +20,18 @@ All notable Project Atlas updates are documented here.
 - Preserved Ubuntu Server 22.04 LTS as the original historical baseline.
 - Updated the project phase from assessment and physical upgrading to platform validation and closeout.
 - Distinguished physical installation from operational validation.
-- Updated memory, cooling, keyboard, external display, wired adapter, battery, bottom-cover, cleaning, and maintenance status.
+- Updated memory, cooling, keyboard, external display, battery, bottom-cover, cleaning, and maintenance status.
 - Retained the operational Samsung 256 GB M.2 2242 SATA SSD.
 - Deferred a capacity upgrade until measured usage justifies one.
 - Recorded the WD Blue SA510 1 TB M.2 2280 SSD as incompatible and never installed.
+- Recorded Wi-Fi as the Atlas v1 network path and the external wired adapter as not installed and intentionally out of scope for this version.
 - Clarified that the repository covers Atlas v1 host-platform readiness without absorbing detailed service configuration.
 
 ### Remaining
 
 - Capture current sanitized post-upgrade evidence.
 - Record missing component models, dates, photographs, and final cost.
-- Validate wired networking with a rollback path.
+- Document and validate continued Wi-Fi operation as the accepted Atlas v1 network path.
 - Validate storage health, cooling, local maintenance access, server-duty power behavior, and extended reliability.
 - Record final specifications and known limitations.
 

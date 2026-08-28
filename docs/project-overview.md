@@ -31,7 +31,7 @@ The audit showed that the primary LAN connection at collection was Wi-Fi. The ow
 
 ## Physical Restoration Status
 
-The owner confirms that the memory, cooling stand, local keyboard, external display path, external wired-network adapter, replacement battery, and replacement bottom cover are installed. Physical restoration is therefore complete.
+The owner confirms that the memory, cooling stand, local keyboard, external display path, external wired-network adapter, replacement battery, and replacement bottom cover are installed. All cleaning and physical maintenance are also complete. Physical restoration and maintenance are therefore complete.
 
 This confirmation records installation, not unobserved technical test results. Component models, dates, costs, photographs, and validation evidence should be added where they are not yet recorded.
 
@@ -43,7 +43,7 @@ A future capacity upgrade will be considered only when actual requirements justi
 
 ## Current Phase
 
-Atlas is in **platform validation and closeout**. The remaining work is evidence collection and operational validation, not further physical upgrading.
+Atlas is in **platform validation and closeout**. The remaining work is evidence collection and operational validation, not further physical upgrading, cleaning, or maintenance.
 
 The phase checklist and evidence requirements are defined in [atlas-v1-completion.md](atlas-v1-completion.md). A checklist item is complete only when supported by the audit, owner confirmation of physical installation, or sanitized validation evidence.
 

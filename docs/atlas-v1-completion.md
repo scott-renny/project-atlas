@@ -34,7 +34,6 @@ The owner confirms completion of all planned physical upgrades, cleaning, and ph
 - [x] Cooling stand installed.
 - [x] Wireless keyboard installed.
 - [x] External maintenance display path added.
-- [x] External wired-network adapter installed.
 - [x] Battery replaced.
 - [x] Bottom cover replaced.
 
@@ -51,12 +50,11 @@ The owner confirms completion of all planned physical upgrades, cleaning, and ph
 
 - [x] Record that SSH was active during the audit.
 - [x] Record that WireGuard was active during the audit.
-- [x] Record installation of the external wired-network adapter.
-- [ ] Validate sustained wired-link stability.
-- [ ] Confirm the production address-assignment method.
+- [x] Record Wi-Fi as the intentional Atlas v1 production network path.
+- [x] Record that no external wired adapter will be installed in Atlas v1.
+- [ ] Confirm the Wi-Fi address-assignment method.
 - [ ] Confirm SSH key-based administration from another LAN machine.
 - [ ] Confirm the remote-access path without publishing addresses, keys, or fingerprints.
-- [ ] Document a rollback method before changing the primary network path.
 
 ### 5. Server-Duty Power Behavior
 
@@ -108,7 +106,7 @@ The supplied audit confirms:
 - SSH, Docker, WireGuard, Caddy, Prometheus, Node Exporter, Grafana, and Wazuh components active;
 - Wi-Fi was the primary LAN path at collection.
 
-The audit does not establish post-installation wired stability, temperature results, power-management behavior, SSD health, or local-console test results.
+The audit does not establish long-term Wi-Fi test results, temperature results, power-management behavior, SSD health, or local-console test results.
 
 ## Evidence Record Template
 
@@ -130,13 +128,12 @@ Do not publish usernames, hostnames, addresses, MAC addresses, Wi-Fi details, se
 1. Capture the current sanitized baseline.
 2. Record the installed physical component details.
 3. Validate local keyboard and display access.
-4. Document network rollback.
-5. Test wired networking without removing the known-good remote path.
-6. Validate storage health and free space.
-7. Measure temperatures and sustained-load behavior.
-8. Validate power-management and reboot behavior.
-9. Run extended reliability testing.
-10. Reconcile cost, final evidence, and known limitations.
-11. Tag the completed Atlas v1 platform baseline.
+4. Document the accepted Wi-Fi-only Atlas v1 network design and validate continued connectivity.
+5. Validate storage health and free space.
+6. Measure temperatures and sustained-load behavior.
+7. Validate power-management and reboot behavior.
+8. Run extended reliability testing.
+9. Reconcile cost, final evidence, and known limitations.
+10. Tag the completed Atlas v1 platform baseline.
 
-Network and power-management changes can interrupt access. Perform them only when local recovery access is available.
+Network and power-management changes can interrupt access. Atlas v1 remains on Wi-Fi; perform any related changes only when local recovery access is available.

@@ -38,11 +38,11 @@ Service names above are inventory evidence only; their detailed configuration be
 
 ## Physical Upgrade Status
 
-The project owner has confirmed that all planned physical upgrades are complete:
+The project owner has confirmed that all planned physical upgrades, cleaning, and physical maintenance are complete:
 
 - [x] 16 GB Timetec DDR3L memory installed.
 - [x] Existing Samsung 256 GB SSD retained after compatibility review.
-- [x] Internal hardware cleaned and inspected.
+- [x] Internal hardware cleaning, inspection, and physical maintenance completed.
 - [x] Cooling stand installed.
 - [x] Wireless keyboard installed for local maintenance.
 - [x] External maintenance display path added.
@@ -54,7 +54,7 @@ Completion above records installation status. Validation results remain separate
 
 ## Current Repo Phase
 
-Atlas v1 is now in **platform validation and closeout**. Physical restoration is complete; the remaining work is to capture sanitized evidence and validate the finished platform.
+Atlas v1 is now in **platform validation and closeout**. Physical restoration, cleaning, and maintenance are complete; the remaining work is to capture sanitized evidence and validate the finished platform.
 
 The Definition of Done is maintained in [docs/atlas-v1-completion.md](docs/atlas-v1-completion.md).
 

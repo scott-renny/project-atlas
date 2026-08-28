@@ -6,31 +6,34 @@ All notable Project Atlas updates are documented here.
 
 ### Added
 
+- Added the Atlas v1 platform validation and closeout Definition of Done.
+- Added evidence requirements and a safe execution order for remaining validation.
+- Added a clear boundary between Atlas v1 and the later Atlas v2 2U rack replacement.
+- Recorded owner confirmation that all planned physical upgrades, cleaning, and physical maintenance are complete.
 - Added a formal storage compatibility decision record.
 - Added a public-safe, sanitized baseline summary.
 - Added privacy guidance for photographs, screenshots, and terminal output.
-- Recorded the Timetec memory kit, iCAN cooling stand, and HP keyboard.
-- Recorded USB Ethernet adapter as the planned external networking solution.
 
 ### Changed
 
+- Reconciled the current operating system with the supplied Ubuntu Server 24.04.4 LTS audit.
+- Preserved Ubuntu Server 22.04 LTS as the original historical baseline.
+- Updated the project phase from assessment and physical upgrading to platform validation and closeout.
+- Distinguished physical installation from operational validation.
+- Updated memory, cooling, keyboard, external display, battery, bottom-cover, cleaning, and maintenance status.
 - Retained the operational Samsung 256 GB M.2 2242 SATA SSD.
 - Deferred a capacity upgrade until measured usage justifies one.
-- Recorded the WD Blue SA510 1 TB M.2 2280 SSD as incompatible and planned for return.
-- Removed outdated SSD installation steps.
-- Clarified that Atlas covers the physical server platform.
-- Kept Athena as a possible future workload rather than core Atlas scope.
-- Changed memory upgrade status from planned to completed.
-- Documented internal cleaning and hardware inspection completion.
-- Updated replacement parts status for the bottom cover and wired networking adapter.
+- Recorded the WD Blue SA510 1 TB M.2 2280 SSD as incompatible and never installed.
+- Recorded Wi-Fi as the Atlas v1 network path and the external wired adapter as not installed and intentionally out of scope for this version.
+- Clarified that the repository covers Atlas v1 host-platform readiness without absorbing detailed service configuration.
 
-### Planned
+### Remaining
 
-- Validate cooling stand and wireless keyboard.
-- Install and validate USB Ethernet adapter when received.
-- Add an external maintenance monitor.
-- Replace the battery later.
-- Complete stability and temperature testing.
+- Capture current sanitized post-upgrade evidence.
+- Record missing component models, dates, photographs, and final cost.
+- Document and validate continued Wi-Fi operation as the accepted Atlas v1 network path.
+- Validate storage health, cooling, local maintenance access, server-duty power behavior, and extended reliability.
+- Record final specifications and known limitations.
 
 ## [0.1.0] - 2026-07-19
 

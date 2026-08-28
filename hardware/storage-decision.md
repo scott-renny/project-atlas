@@ -2,9 +2,11 @@
 
 ## Decision
 
-Project Atlas will retain its operational Samsung 256 GB M.2 2242 SATA SSD. The storage-capacity upgrade is deferred until measured usage demonstrates a need.
+Project Atlas will keep its original Samsung 256 GB M.2 2242 SATA SSD.
 
-## Existing Drive
+A suitable replacement could not be found for the laptop's M.2 2242 SATA form factor. The original drive is operational and remains the Atlas v1 system drive.
+
+## Original Drive
 
 | Property | Value |
 |---|---|
@@ -12,7 +14,8 @@ Project Atlas will retain its operational Samsung 256 GB M.2 2242 SATA SSD. The 
 | Capacity | 256 GB |
 | Form factor | M.2 2242 |
 | Interface | SATA |
-| Status | Installed and operational |
+| Status | Original drive; installed and operational |
+| Atlas v1 decision | Retain |
 
 ## Evaluated Replacement
 
@@ -24,35 +27,48 @@ Project Atlas will retain its operational Samsung 256 GB M.2 2242 SATA SSD. The 
 | Form factor | M.2 2280 |
 | Interface | SATA |
 | Result | Physically incompatible |
-| Action | Return; never installed |
+| Outcome | Never installed |
 
-Although the replacement used the correct SATA interface, its 80 mm length did not match the laptop's 42 mm mounting position. No suitable 2280 mounting standoff was identified. The drive was not forced, adapted, or installed.
+Although the evaluated replacement used the correct SATA interface, its 80 mm length did not match the laptop's 42 mm mounting position. No suitable 2280 mounting position was available. The drive was not forced, adapted, or installed.
+
+## Replacement Search Outcome
+
+Atlas requires an M.2 2242 SATA drive for a direct internal replacement. M.2 describes several sizes and interfaces, so an M.2 drive is not automatically compatible.
+
+No suitable replacement was identified for the required M.2 2242 SATA combination. Atlas v1 will therefore continue using the original Samsung SSD.
 
 ## Alternatives Considered
 
-### Buy a 1 TB M.2 2242 SATA SSD
+### Use the purchased M.2 2280 SATA SSD
 
-Technically viable, but rejected for now because compatible high-capacity drives are comparatively expensive and the current workload does not require the additional capacity.
+Rejected because the drive was physically too long for the 2242 mounting position.
 
-### Modify the chassis
+### Modify the chassis or improvise a mount
 
-Rejected because improvised mounting could reduce reliability or damage the laptop and SSD.
+Rejected because an improvised installation could reduce reliability or damage the laptop or SSD.
 
-### Use external storage later
+### Buy another M.2 2242 SATA SSD
 
-Remains available for backups, archives, transfers, or other non-system data.
+No suitable replacement was found. This option may be revisited only if the original drive fails or Atlas v1 storage requirements change.
+
+### Use separate external storage
+
+Remains available for backups, archives, transfers, and other non-system data.
 
 ## Rationale
 
-The existing SSD is compatible, functional, and adequate for Ubuntu Server, administrative tools, lightweight containers, configuration files, and routine logs. Large datasets, backups, media, and long-term archives should use separate storage.
+The original SSD is compatible, operational, and adequate for the current Atlas v1 system role. Keeping it avoids an unsafe physical workaround and avoids purchasing another incompatible device.
+
+SSD health, available space, and filesystem condition still require current validation evidence. This validation does not change the decision to retain the drive.
 
 ## Lessons Learned
 
-- Matching the interface does not guarantee physical compatibility.
-- M.2 devices vary in both interface and module length.
-- Connector keying and mounting position must be verified before purchase.
-- Hardware should never be forced into place.
-- A functional component should be retained when an upgrade offers limited practical value.
+- Matching the SATA interface does not guarantee physical compatibility.
+- M.2 devices vary in module length as well as interface.
+- Atlas requires the 2242 length for its internal mounting position.
+- Connector keying and the mounting position must be verified before purchase.
+- Hardware should never be forced or improvised into place.
+- A functional original component should be retained when no suitable replacement is available.
 
 ## Evidence Handling
 

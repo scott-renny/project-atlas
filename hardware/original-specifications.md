@@ -1,60 +1,66 @@
 # Original Hardware Specifications
 
-## System
+This document preserves the original Atlas baseline and records how each item ended. For the current system state, see the repository README.
 
-| Component | Specification |
+## Original System
+
+| Component | Original specification |
 |---|---|
 | Manufacturer | Dell |
 | Model | Latitude E7250 |
 | CPU | Intel Core i7-5600U (2 cores / 4 threads) |
-| Operating system | Ubuntu Server 22.04 LTS |
+| Operating system at original baseline | Ubuntu Server 22.04 LTS |
 | Purchase price | $110 CAD |
+
+The supplied current-system audit records Ubuntu Server 24.04.4 LTS and kernel 6.8.0-137-generic.
 
 ## Memory
 
-| Item | Value |
+| Item | Outcome |
 |---|---|
-| Installed | 8 GB DDR3L |
-| Purchased upgrade | Timetec 16 GB (2 × 8 GB) DDR3L-1600 |
+| Original memory | 8 GB DDR3L |
+| Upgrade | Timetec 16 GB (2 × 8 GB) DDR3L-1600 |
+| Current status | Installed; recognized by the supplied audit |
 
 ## Storage
 
-| Item | Value |
+| Item | Outcome |
 |---|---|
-| Current drive | Samsung 256 GB M.2 2242 SATA SSD |
+| Retained drive | Samsung 256 GB M.2 2242 SATA SSD |
 | Status | Installed and operational |
-| Current-build decision | Retain and validate |
 | Capacity upgrade | Deferred until justified |
-
-Physical inspection confirmed the 2242 drive and mounting position. A WD Blue SA510 1 TB M.2 2280 SATA drive was too long and was not installed.
+| Rejected replacement | WD Blue SA510 1 TB M.2 2280 SATA; physically incompatible and never installed |
 
 ## Network
 
-| Component | Status |
+| Component | Outcome |
 |---|---|
-| Wi-Fi | Operational |
-| Bluetooth | Operational |
-| Integrated Ethernet | Non-functional |
-| Permanent wired solution | Under evaluation |
+| Wi-Fi | Operational and primary at the supplied audit |
+| Bluetooth | Operational at the original baseline |
+| Integrated Ethernet | Recorded as non-functional |
+| External wired solution | Not installed; intentionally not part of Atlas v1 |
 
-## Display, Input, and Cooling
+## Display, Input, Cooling, and Repairs
 
-- Internal LCD is functional but deteriorating.
-- An external maintenance monitor is planned.
-- An HP 230 wireless keyboard has been purchased.
-- Factory cooling will be cleaned and supplemented by an iCAN K5 stand.
-- Thermal compound will be replaced if inspection indicates it is required.
+The owner confirms that all planned physical upgrades, cleaning, and physical maintenance are complete:
 
-## Physical Condition
+- cooling stand installed;
+- wireless keyboard installed;
+- external maintenance display path added;
+- replacement battery installed;
+- replacement bottom cover installed;
+- internal hardware cleaning, inspection, and physical maintenance completed.
 
-- Bottom-cover and battery replacements are planned.
-- USB error `-71` was previously observed on one port.
+Component details and operational validation evidence remain to be recorded where absent.
 
-## Planned Work
+## Remaining Validation
 
-- Install and validate the memory kit.
+- Capture and sanitize a current post-upgrade summary.
 - Validate SSD health, free space, and filesystem.
-- Test the cooling stand and wireless keyboard.
-- Select and validate wired networking.
-- Add an external monitor.
-- Replace the battery and bottom cover later.
+- Validate cooling, keyboard, and local display operation.
+- Document Wi-Fi as the accepted Atlas v1 network path and wired networking as out of scope.
+- Validate server-duty power behavior.
+- Complete temperature and extended-reliability testing.
+- Record final component details, cost, photographs, and known limitations.
+
+The previously observed USB error `-71` should remain documented until its current impact is tested.

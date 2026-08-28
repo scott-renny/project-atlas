@@ -8,13 +8,13 @@ Atlas v1 is the laptop-based platform described in this repository. Atlas v2 is 
 
 ## Repository Scope
 
-This repository covers the Atlas v1 host platform: hardware condition and upgrades, operating-system baseline, networking readiness, cooling, local maintenance access, reliability testing, and sanitized evidence.
+This repository covers the Atlas v1 host platform: hardware restoration, operating-system baseline, networking readiness, cooling, local maintenance access, reliability testing, and sanitized evidence.
 
 Detailed application configuration and broader COC architecture remain outside this repository. This phase does not add new services, redesign the COC, or introduce Atlas v2 requirements.
 
 ## Confirmed Current State
 
-The latest supplied Atlas audit confirms:
+The supplied system audit confirms:
 
 | Area | Confirmed state |
 |---|---|
@@ -26,7 +26,7 @@ The latest supplied Atlas audit confirms:
 | Kernel | Linux 6.8.0-137-generic |
 | Host role | COC infrastructure server |
 | Uptime at audit | 20 days |
-| Primary network at audit | Wi-Fi; wired networking not yet validated |
+| Primary network at audit | Wi-Fi; wired operation still requires documented validation |
 | Remote administration | SSH active |
 | Container runtime | Docker active |
 | Remote access | WireGuard active |
@@ -36,40 +36,38 @@ The latest supplied Atlas audit confirms:
 
 Service names above are inventory evidence only; their detailed configuration belongs with the relevant COC service documentation.
 
-## Completed Hardware Work
+## Physical Upgrade Status
 
-- [x] Laptop acquired.
-- [x] Ubuntu Server installed and upgraded to 24.04.4 LTS.
-- [x] Baseline hardware identified.
-- [x] Storage form factor physically verified.
-- [x] Existing Samsung 256 GB SSD retained.
-- [x] Timetec 16 GB DDR3L memory installed.
+The project owner has confirmed that all planned physical upgrades are complete:
+
+- [x] 16 GB Timetec DDR3L memory installed.
+- [x] Existing Samsung 256 GB SSD retained after compatibility review.
 - [x] Internal hardware cleaned and inspected.
-- [x] Storage compatibility decision recorded.
+- [x] Cooling stand installed.
+- [x] Wireless keyboard installed for local maintenance.
+- [x] External maintenance display path added.
+- [x] External wired-network adapter installed.
+- [x] Battery replaced.
+- [x] Bottom cover replaced.
+
+Completion above records installation status. Validation results remain separate unless supported by the system audit or published test evidence.
 
 ## Current Repo Phase
 
-The next repository phase is **Atlas v1 platform validation and closeout**.
+Atlas v1 is now in **platform validation and closeout**. Physical restoration is complete; the remaining work is to capture sanitized evidence and validate the finished platform.
 
-Its Definition of Done is maintained in [docs/atlas-v1-completion.md](docs/atlas-v1-completion.md). In summary, the phase is complete when:
-
-- confirmed host facts are accurate and consistent across the repository;
-- hardware, storage, thermals, power behavior, networking, and local maintenance access have recorded evidence;
-- reliability and restart testing have been completed;
-- published evidence is sanitized;
-- unresolved physical work is either completed or explicitly deferred with a reason;
-- the final Atlas v1 specification and known limitations are documented.
+The Definition of Done is maintained in [docs/atlas-v1-completion.md](docs/atlas-v1-completion.md).
 
 ## Highest-Priority Incomplete Work
 
 1. Capture a fresh sanitized post-upgrade hardware and operating-system record.
-2. Validate a stable wired network path; do not change the live connection until a rollback path is available.
+2. Validate the installed wired-network path without removing the known-good remote path.
 3. Record SSD health, free space, and filesystem evidence.
 4. Establish idle and sustained-load temperature baselines.
-5. Validate cooling stand and local keyboard operation.
+5. Record cooling stand, keyboard, and local display validation.
 6. Verify lid-close, suspend/hibernate, reboot, and power-recovery behavior for server duty.
 7. Complete an extended reliability test and document the outcome.
-8. Record final specifications, cost, photographs, and explicitly deferred repairs.
+8. Record final component details, cost, photographs, and known limitations.
 
 ## Storage Decision
 
@@ -85,8 +83,8 @@ See [hardware/storage-decision.md](hardware/storage-decision.md).
 
 - Dell Latitude E7250 platform
 - Ubuntu Server host readiness
-- physical restoration and hardware validation
-- wired-network readiness
+- completed physical restoration
+- wired-network validation
 - cooling and reliability validation
 - local maintenance access
 - sanitized rebuild and closeout evidence

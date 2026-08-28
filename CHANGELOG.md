@@ -9,30 +9,30 @@ All notable Project Atlas updates are documented here.
 - Added the Atlas v1 platform validation and closeout Definition of Done.
 - Added evidence requirements and a safe execution order for remaining validation.
 - Added a clear boundary between Atlas v1 and the later Atlas v2 2U rack replacement.
+- Recorded owner confirmation that all planned physical upgrades are complete.
 - Added a formal storage compatibility decision record.
 - Added a public-safe, sanitized baseline summary.
 - Added privacy guidance for photographs, screenshots, and terminal output.
-- Recorded the Timetec memory kit, iCAN cooling stand, and HP keyboard.
-- Recorded USB Ethernet adapter as the planned external networking solution.
 
 ### Changed
 
-- Reconciled the documented operating system with the supplied Ubuntu Server 24.04.4 LTS audit.
-- Updated the project phase from assessment to platform validation and closeout.
-- Distinguished confirmed audit evidence from validation work that still requires execution.
+- Reconciled the current operating system with the supplied Ubuntu Server 24.04.4 LTS audit.
+- Preserved Ubuntu Server 22.04 LTS as the original historical baseline.
+- Updated the project phase from assessment and physical upgrading to platform validation and closeout.
+- Distinguished physical installation from operational validation.
+- Updated memory, cooling, keyboard, external display, wired adapter, battery, and bottom-cover status.
 - Retained the operational Samsung 256 GB M.2 2242 SATA SSD.
 - Deferred a capacity upgrade until measured usage justifies one.
-- Recorded the WD Blue SA510 1 TB M.2 2280 SSD as incompatible and planned for return.
+- Recorded the WD Blue SA510 1 TB M.2 2280 SSD as incompatible and never installed.
 - Clarified that the repository covers Atlas v1 host-platform readiness without absorbing detailed service configuration.
-- Changed memory upgrade status from planned to completed.
-- Documented internal cleaning and hardware inspection completion.
 
 ### Remaining
 
 - Capture current sanitized post-upgrade evidence.
+- Record missing component models, dates, photographs, and final cost.
 - Validate wired networking with a rollback path.
 - Validate storage health, cooling, local maintenance access, server-duty power behavior, and extended reliability.
-- Reconcile final specifications, costs, repairs, and explicitly deferred work.
+- Record final specifications and known limitations.
 
 ## [0.1.0] - 2026-07-19
 

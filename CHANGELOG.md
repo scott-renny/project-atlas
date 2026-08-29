@@ -13,6 +13,8 @@ All notable Project Atlas updates are documented here.
 - Added a formal storage compatibility decision record.
 - Added a public-safe, sanitized baseline summary.
 - Added privacy guidance for photographs, screenshots, and terminal output.
+- Added a sanitized 22-image Atlas v1 evidence gallery.
+- Added a sanitized post-upgrade audit summary and clearly separated it from the Ubuntu 22.04 / 8 GB historical screenshots.
 
 ### Changed
 
@@ -31,7 +33,6 @@ All notable Project Atlas updates are documented here.
 
 ### Remaining
 
-- Capture current sanitized post-upgrade evidence.
 - Record missing component models, dates, photographs, and final cost.
 - Document and validate continued Wi-Fi operation as the accepted Atlas v1 network path.
 - Validate storage health, cooling, local maintenance access, server-duty power behavior, and extended reliability.

@@ -39,9 +39,9 @@ The owner confirms completion of all planned physical upgrades, cleaning, and ph
 
 ### 3. Host Evidence
 
-- [ ] Add a fresh sanitized post-upgrade system summary.
+- [x] Add a sanitized post-upgrade system summary.
 - [x] Record CPU and installed-memory recognition from the supplied audit.
-- [ ] Record disk layout, filesystem usage, and mount points.
+- [x] Record disk layout, filesystem usage, and mount points from the supplied audit.
 - [ ] Record SSD health evidence without serial numbers or other identifiers.
 - [x] Record the firmware version from the supplied audit.
 - [ ] Record whether the firmware age is an accepted limitation.
@@ -80,7 +80,7 @@ The owner confirms completion of all planned physical upgrades, cleaning, and ph
 - [x] External maintenance display path added.
 - [x] Record successful HP 230 keyboard operation at the local Ubuntu console (2026-08-28).
 - [ ] Record successful local display operation.
-- [ ] Add sanitized photographs of the completed installation where useful.
+- [x] Add sanitized photographs of the completed installation and historical baseline.
 - [ ] Record the known USB-port limitation and its current operational impact.
 
 ### 8. Closeout
@@ -94,7 +94,7 @@ The owner confirms completion of all planned physical upgrades, cleaning, and ph
 
 ## Audit-Supported Current State
 
-The supplied audit confirms:
+The supplied post-upgrade audit confirms:
 
 - Dell Latitude E7250;
 - Ubuntu Server 24.04.4 LTS;
@@ -125,15 +125,14 @@ Do not publish usernames, hostnames, addresses, MAC addresses, Wi-Fi details, se
 
 ## Safe Execution Order
 
-1. Capture the current sanitized baseline.
-2. Record the installed physical component details.
-3. Validate local display access; keyboard validation is complete.
-4. Document the accepted Wi-Fi-only Atlas v1 network design and validate continued connectivity.
-5. Validate storage health and free space.
-6. Measure temperatures and sustained-load behavior.
-7. Validate power-management and reboot behavior.
-8. Run extended reliability testing.
-9. Reconcile cost, final evidence, and known limitations.
-10. Tag the completed Atlas v1 platform baseline.
+1. Record the installed physical component details.
+2. Validate local display access; keyboard validation is complete.
+3. Document the accepted Wi-Fi-only Atlas v1 network design and validate continued connectivity.
+4. Validate storage health and free space.
+5. Measure temperatures and sustained-load behavior.
+6. Validate power-management and reboot behavior.
+7. Run extended reliability testing.
+8. Reconcile cost, final evidence, and known limitations.
+9. Tag the completed Atlas v1 platform baseline.
 
 Network and power-management changes can interrupt access. Atlas v1 remains on Wi-Fi; perform any related changes only when local recovery access is available.

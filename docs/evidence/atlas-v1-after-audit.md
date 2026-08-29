@@ -29,7 +29,7 @@ The audit showed the approximately 250 GB system disk with ample free space and 
 
 ## Evidence Boundary
 
-The terminal screenshots in the photo gallery show the earlier Ubuntu 22.04 / 8 GB `homelabserver` state. They are pre-upgrade evidence. The table above is the authoritative public “after” summary for the finished Atlas v1 platform.
+The terminal screenshots in the photo gallery show the earlier Ubuntu 22.04 / 8 GB pre-upgrade state. They are pre-upgrade evidence. The table above is the authoritative public “after” summary for the finished Atlas v1 platform.
 
 ## Still Not Proven by This Audit
 

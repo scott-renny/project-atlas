@@ -18,6 +18,7 @@ All notable Project Atlas updates are documented here.
 
 ### Changed
 
+- Updated the repository quality workflow to pinned `actions/checkout` v7.0.1.
 - Validated HP 230 wireless keyboard operation at the local Ubuntu console.
 
 - Reconciled the current operating system with the supplied Ubuntu Server 24.04.4 LTS audit.

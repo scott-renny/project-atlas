@@ -14,7 +14,7 @@ Detailed application configuration and broader COC architecture remain outside t
 
 ## Confirmed Current State
 
-The supplied system audit confirms:
+The sanitized post-upgrade audit summary confirms:
 
 | Area | Confirmed state |
 |---|---|
@@ -57,16 +57,22 @@ Atlas v1 is now in **platform validation and closeout**. Physical restoration, c
 
 The Definition of Done is maintained in [docs/atlas-v1-completion.md](docs/atlas-v1-completion.md).
 
+## Evidence
+
+- [Sanitized build and restoration photographs](docs/evidence/atlas-v1-build-evidence.md)
+- [Sanitized post-upgrade audit summary](docs/evidence/atlas-v1-after-audit.md)
+
+The terminal screenshots in the evidence gallery document the earlier Ubuntu 22.04 / 8 GB baseline. They are historical “before” evidence and are not the finished Atlas v1 state.
+
 ## Highest-Priority Incomplete Work
 
-1. Capture a fresh sanitized post-upgrade hardware and operating-system record.
-2. Document Wi-Fi as the intentional Atlas v1 network path and the lack of wired networking as an accepted limitation.
-3. Record SSD health, free space, and filesystem evidence.
-4. Establish idle and sustained-load temperature baselines.
-5. Record cooling stand and local display validation.
-6. Verify lid-close, suspend/hibernate, reboot, and power-recovery behavior for server duty.
-7. Complete an extended reliability test and document the outcome.
-8. Record final component details, cost, photographs, and known limitations.
+1. Document Wi-Fi as the intentional Atlas v1 network path and the lack of wired networking as an accepted limitation.
+2. Record SSD health evidence.
+3. Establish idle and sustained-load temperature baselines.
+4. Record cooling stand and local display validation.
+5. Verify lid-close, suspend/hibernate, reboot, and power-recovery behavior for server duty.
+6. Complete an extended reliability test and document the outcome.
+7. Record final component details, cost, photographs, and known limitations.
 
 ## Storage Decision
 

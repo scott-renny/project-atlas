@@ -1,5 +1,9 @@
 # Atlas v1 Platform Validation and Closeout
 
+## Operational Milestone — Complete
+
+The September 7, 2026 unattended-operation milestone is closed and Atlas v1 is operational. The owner also confirmed successful external-network SSH and remote-development acceptance. Unchecked items below remain transparent, optional follow-up; they are not claims of failed readiness or completed tests and do not reopen the operational milestone.
+
 ## Phase Goal
 
 Validate and document the completed Atlas v1 physical build as a reliable Ubuntu infrastructure platform without expanding into Atlas v2 or adding new COC services.
@@ -9,7 +13,7 @@ Validate and document the completed Atlas v1 physical build as a reliable Ubuntu
 A checklist item may be marked complete when supported by:
 
 - the supplied system audit;
-- the owner's confirmation of completed physical installation; or
+- the owner's explicit confirmation of the relevant installation or validation; or
 - dated, sanitized validation evidence.
 
 Physical installation and operational validation are tracked separately.
@@ -21,7 +25,7 @@ Physical installation and operational validation are tracked separately.
 - [x] Atlas v1 and Atlas v2 are clearly separated.
 - [x] The current operating system is recorded as Ubuntu Server 24.04.4 LTS.
 - [x] Physical restoration, cleaning, and maintenance are recorded as complete.
-- [x] The current phase is platform validation and closeout.
+- [x] The current state is operational with the unattended-operation milestone complete.
 - [ ] Final component details, specifications, cost, and known limitations are recorded.
 
 ### 2. Completed Physical Build
@@ -54,7 +58,7 @@ The owner confirms completion of all planned physical upgrades, cleaning, and ph
 - [x] Record that no external wired adapter will be installed in Atlas v1.
 - [ ] Confirm the Wi-Fi address-assignment method.
 - [ ] Confirm SSH key-based administration from another LAN machine.
-- [ ] Confirm the remote-access path without publishing addresses, keys, or fingerprints.
+- [x] Confirm the remote-access path without publishing addresses, keys, or fingerprints (owner-confirmed external SSH/remote-development acceptance).
 
 ### 5. Server-Duty Power Behavior
 
@@ -138,7 +142,7 @@ The audit and resilience test do not establish long-term Wi-Fi test results, tem
 
 Do not publish usernames, hostnames, addresses, MAC addresses, Wi-Fi details, serial numbers, service tags, SSH fingerprints, private keys, tokens, credentials, or unreviewed terminal output.
 
-## Safe Execution Order
+## Optional Follow-up Execution Order
 
 1. Record the installed physical component details.
 2. Validate local display access; keyboard validation is complete.

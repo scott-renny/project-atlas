@@ -63,7 +63,7 @@ See [evidence/atlas-v1-resilience-validation-2026-09-07.md](evidence/atlas-v1-re
 
 ## Current Phase
 
-Atlas is in **platform validation and closeout**. Physical restoration is complete, and the pre-travel unattended-operation/power-recovery milestone is complete. Remaining work is limited to evidence and operational checks that have not yet been proven, including SSD health, thermal baselines, selected local-console and lid/suspend behavior, and extended reliability.
+Atlas v1 is **operational**, with the September 7 unattended-operation milestone complete and closed. The owner confirmed successful external-network SSH and remote-development acceptance. Additional SSD-health, thermal, local-console, lid/suspend and extended-reliability evidence remains optional follow-up; these unperformed checks are not being reported as passed.
 
 The phase checklist and evidence requirements are defined in [atlas-v1-completion.md](atlas-v1-completion.md). A checklist item is complete only when supported by the audit, owner confirmation of physical installation, or sanitized validation evidence.
 

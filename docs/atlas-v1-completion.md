@@ -61,9 +61,22 @@ The owner confirms completion of all planned physical upgrades, cleaning, and ph
 - [x] Replacement battery installed.
 - [ ] Confirm lid close does not suspend the host.
 - [ ] Confirm suspend and hibernate behavior is intentionally configured.
-- [ ] Confirm a clean reboot returns the host to an administrable state.
-- [ ] Record behavior after AC loss and restoration where safely testable.
-- [ ] Record battery and charger condition.
+- [x] Confirm a clean reboot returns the host to an administrable state.
+- [x] Record behavior after AC loss and restoration where safely testable.
+- [x] Record battery condition relevant to server duty.
+- [x] Configure and validate graceful shutdown on battery depletion while AC is absent.
+
+Validated 2026-09-07:
+
+- BIOS `Wake on AC` was enabled and physically tested by restoring AC without pressing the power button; Atlas booted automatically.
+- A normal reboot returned the host to an administrable state with the system reported as `running` and zero failed systemd units.
+- The replacement battery is used as the built-in short-duration UPS.
+- Measured battery health was approximately 81.8% of design capacity at validation time.
+- `atlas-power-watch.timer` runs every minute and selects a clean shutdown when AC is absent and battery charge reaches 35% or below.
+- The watchdog decision logic was validated safely without intentionally draining the battery to the shutdown threshold.
+- Core host services and production Docker containers recovered automatically after reboot and restored-AC boot.
+
+See [Atlas v1 Resilience Validation — 2026-09-07](evidence/atlas-v1-resilience-validation-2026-09-07.md).
 
 ### 6. Cooling and Reliability
 
@@ -106,7 +119,9 @@ The supplied post-upgrade audit confirms:
 - SSH, Docker, WireGuard, Caddy, Prometheus, Node Exporter, Grafana, and Wazuh components active;
 - Wi-Fi was the primary LAN path at collection.
 
-The audit does not establish long-term Wi-Fi test results, temperature results, power-management behavior, SSD health, or local-console test results.
+The September 7 resilience validation additionally confirms clean reboot recovery, automatic boot after AC restoration, battery-backed graceful shutdown logic, persistence of core host services, automatic recovery of the production Docker containers, and a clean systemd state after reboot.
+
+The audit and resilience test do not establish long-term Wi-Fi test results, temperature results, SSD health, or all remaining local-console test results.
 
 ## Evidence Record Template
 
@@ -130,7 +145,7 @@ Do not publish usernames, hostnames, addresses, MAC addresses, Wi-Fi details, se
 3. Document the accepted Wi-Fi-only Atlas v1 network design and validate continued connectivity.
 4. Validate storage health and free space.
 5. Measure temperatures and sustained-load behavior.
-6. Validate power-management and reboot behavior.
+6. Finish any remaining lid/suspend power-management checks; reboot and AC-restoration recovery are complete.
 7. Run extended reliability testing.
 8. Reconcile cost, final evidence, and known limitations.
 9. Tag the completed Atlas v1 platform baseline.

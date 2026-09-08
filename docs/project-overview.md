@@ -12,12 +12,12 @@ Atlas v1 is the current laptop platform. Atlas v2 is the later 2U rack replaceme
 - Maintain the installed 16 GB DDR3L memory configuration.
 - Retain and validate the Samsung 256 GB M.2 2242 SATA SSD.
 - Document the completed physical restoration.
-- Validate cooling, networking, power behavior, local maintenance access, and long-term reliability.
+- Validate cooling, networking, power behavior, local maintenance access, unattended recovery, and long-term reliability.
 - Document decisions, evidence, tests, known limitations, and deferred work.
 
 ## Scope
 
-This repository includes hardware assessment, completed physical upgrades, memory and storage decisions, cooling improvements, local console hardware, Wi-Fi network operation, host-platform validation, temperatures, stability testing, and sanitized evidence.
+This repository includes hardware assessment, completed physical upgrades, memory and storage decisions, cooling improvements, local console hardware, Wi-Fi network operation, host-platform validation, power resilience, temperatures, stability testing, and sanitized evidence.
 
 The repository may inventory services only when that evidence helps establish the host's current role. Detailed application configuration and the broader COC architecture are documented elsewhere.
 
@@ -41,12 +41,34 @@ Atlas retains its Samsung 256 GB M.2 2242 SATA SSD. A purchased WD Blue SA510 1 
 
 A future capacity upgrade will be considered only when actual requirements justify a compatible M.2 2242 SATA drive or separate external storage.
 
+## Unattended Operation and Recovery
+
+A September 7, 2026 resilience milestone was completed before the project owner left home for approximately three weeks to support a new site and train managers and team leads. That absence created a practical infrastructure requirement: Atlas needed to keep operating without physical intervention and recover cleanly from routine reboots and power interruptions.
+
+The validation confirmed:
+
+- BIOS `Wake on AC` powers Atlas back on automatically after AC is restored;
+- a clean reboot returns the host to an administrable state;
+- the replacement battery can provide short-duration backup power;
+- a systemd watchdog checks AC and battery state every minute and initiates a clean shutdown at 35% or below when AC is absent;
+- core host services and private remote-access components return automatically after reboot;
+- production Docker containers recover via `unless-stopped` restart policies;
+- Pi-hole returns healthy after reboot;
+- the host reaches a clean `running` systemd state with zero failed units;
+- Ubuntu security maintenance is automated while potentially disruptive updates and reboots remain deliberate.
+
+The resilience milestone deliberately reused existing hardware and native platform capabilities rather than adding unnecessary complexity. This reflects the project's simplicity-first approach: use what already works, configure it correctly, integrate it, and only build something new when a real gap remains.
+
+See [evidence/atlas-v1-resilience-validation-2026-09-07.md](evidence/atlas-v1-resilience-validation-2026-09-07.md).
+
 ## Current Phase
 
-Atlas is in **platform validation and closeout**. The remaining work is evidence collection and operational validation, not further physical upgrading, cleaning, or maintenance.
+Atlas is in **platform validation and closeout**. Physical restoration is complete, and the pre-travel unattended-operation/power-recovery milestone is complete. Remaining work is limited to evidence and operational checks that have not yet been proven, including SSD health, thermal baselines, selected local-console and lid/suspend behavior, and extended reliability.
 
 The phase checklist and evidence requirements are defined in [atlas-v1-completion.md](atlas-v1-completion.md). A checklist item is complete only when supported by the audit, owner confirmation of physical installation, or sanitized validation evidence.
 
 ## Method
 
 Every modification is documented, tested, sanitized before publication, and verified. Changes that could interrupt remote access—especially networking and power-management changes—require a rollback path and local access.
+
+The operational principle established during the resilience milestone is: **recovery is automatic, security maintenance is automatic where safe, and potentially disruptive change is deliberate.**

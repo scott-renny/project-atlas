@@ -27,7 +27,7 @@ The sanitized post-upgrade audit and September 2026 resilience validation confir
 | Host role | COC infrastructure server |
 | Atlas v1 network | Wi-Fi; no external wired adapter will be added in this version |
 | Remote administration | SSH active |
-| Remote access | WireGuard and Tailscale present for private administration |
+| Remote access | WireGuard and Tailscale present; external SSH/remote-development acceptance confirmed by the owner |
 | Container runtime | Docker active; production containers configured to recover automatically |
 | Power recovery | BIOS Wake on AC enabled and physically validated |
 | Battery protection | Battery-backed graceful shutdown watchdog at 35% when AC is absent |
@@ -75,7 +75,7 @@ See [docs/evidence/atlas-v1-resilience-validation-2026-09-07.md](docs/evidence/a
 
 ## Current Repo Phase
 
-Atlas v1 remains in **platform validation and closeout**, but the pre-travel power-resilience and automatic-recovery milestone is complete. Remaining work is limited to evidence and validation items that have not yet been proven, such as SSD health, temperature baselines, extended reliability, and selected local-console/power-management checks.
+Atlas v1 is **operational; the September 7, 2026 unattended-operation milestone is complete and closed**. The owner also confirmed successful external-network SSH and remote-development acceptance. Optional evidence and additional validation follow-up do not reopen this milestone or imply those additional tests have passed.
 
 The Definition of Done is maintained in [docs/atlas-v1-completion.md](docs/atlas-v1-completion.md).
 
@@ -87,7 +87,7 @@ The Definition of Done is maintained in [docs/atlas-v1-completion.md](docs/atlas
 
 The terminal screenshots in the evidence gallery document the earlier Ubuntu 22.04 / 8 GB baseline. They are historical “before” evidence and are not the finished Atlas v1 state.
 
-## Highest-Priority Incomplete Work
+## Optional Follow-up — Non-blocking
 
 1. Record SSD health evidence.
 2. Establish idle and sustained-load temperature baselines.

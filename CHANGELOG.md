@@ -2,6 +2,12 @@
 
 All notable Project Atlas updates are documented here.
 
+## 2026-09-07 — Operational milestone closed
+
+- Marked Atlas v1 operational and the unattended-operation resilience milestone complete.
+- Recorded owner confirmation of successful external-network SSH and remote-development acceptance.
+- Classified remaining evidence and additional validation as non-blocking follow-up without claiming unperformed tests passed.
+
 ## [Unreleased]
 
 ### Added
@@ -47,7 +53,7 @@ All notable Project Atlas updates are documented here.
 - The requirement was to make Atlas capable of unattended operation and recovery rather than adding new features immediately before travel.
 - The operating principle established for Atlas is: recovery is automatic, security maintenance is automatic where safe, and potentially disruptive change is deliberate.
 
-### Remaining
+### Optional Follow-up — Non-blocking
 
 - Record missing component models, dates, photographs, and final cost.
 - Validate storage health, cooling, remaining local maintenance access, selected lid/suspend behavior, and extended reliability.

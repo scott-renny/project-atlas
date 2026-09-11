@@ -38,6 +38,12 @@ The sanitized post-upgrade audit and September 2026 resilience validation confir
 
 Service names above are inventory and resilience evidence only; their detailed configuration belongs with the relevant COC service documentation.
 
+## Phase 9 service acceptance — September 10/11, 2026
+
+Nextcloud 34.0.3 file access and sync is complete on Atlas, with Tailscale private access through a canonical HTTPS hostname and Caddy, tested Restic backup and database restore, Wazuh FIM alert validation, EICAR-tested ClamAV, working 2FA and outbound email, configured Windows 11 and Windows 10 clients, and successful reboot persistence. Galaxy S25 and Tab A11 Nextcloud onboarding are intentionally deferred and are not Phase 9 blockers.
+
+These service acceptance results come from the completed owner validation session. Detailed application operations belong in the [COC Phase 9 record](https://github.com/scott-renny/cyber-operations-center-engineering-program/tree/main/phases/phase-09-nextcloud). Atlas v1 remains operational; this milestone does not reopen its hardware scope.
+
 ## Physical Upgrade Status
 
 The project owner has confirmed that all planned physical upgrades, cleaning, and physical maintenance are complete:

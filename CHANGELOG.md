@@ -2,6 +2,11 @@
 
 All notable Project Atlas updates are documented here.
 
+## 2026-09-10 EDT / 2026-09-11 UTC — Nextcloud service acceptance
+
+- Linked completed COC Phase 9 and recorded Nextcloud security, recovery and reboot persistence acceptance on Atlas.
+- Preserved Atlas v1 scope and deferred mobile onboarding; no live configuration change is claimed.
+
 ## 2026-09-07 — Operational milestone closed
 
 - Marked Atlas v1 operational and the unattended-operation resilience milestone complete.

@@ -6,6 +6,10 @@ Project Atlas documents the restoration and validation of a Dell Latitude E7250 
 
 Atlas v1 is the laptop-based platform described in this repository. Atlas v2 is the later 2U rack replacement and is deliberately outside this phase.
 
+## Architecture
+
+The host platform design, including the power-recovery flow, is in [ARCHITECTURE.md](ARCHITECTURE.md).
+
 ## Repository Scope
 
 This repository covers the Atlas v1 host platform: hardware restoration, operating-system baseline, networking readiness, cooling, local maintenance access, reliability testing, power resilience, and sanitized evidence.

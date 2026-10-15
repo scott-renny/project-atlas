@@ -1,4 +1,18 @@
+<div align="center">
+
 # Project Atlas
+### Infrastructure Server · Reliability · Recovery
+
+![scope: Atlas v1](https://img.shields.io/badge/scope-Atlas%20v1-2563eb?style=flat-square)
+![platform: Ubuntu Server](https://img.shields.io/badge/platform-Ubuntu%20Server-22d3ee?style=flat-square)
+
+[Architecture](ARCHITECTURE.md) · [License](LICENSE)
+
+</div>
+
+[Atlas v1 — Dell Latitude E7250 Infrastructure Server](#atlas-v1--dell-latitude-e7250-infrastructure-server) · [Architecture](#architecture) · [Repository Scope](#repository-scope) · [Confirmed Current State](#confirmed-current-state) · [Phase 9 service acceptance — September 10/11, 2026](#phase-9-service-acceptance--september-1011-2026) · [Physical Upgrade Status](#physical-upgrade-status)
+
+---
 
 ## Atlas v1 — Dell Latitude E7250 Infrastructure Server
 
